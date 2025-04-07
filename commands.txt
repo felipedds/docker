@@ -1,0 +1,9 @@
+### Stop all containers
+docker stop $(docker ps -q)
+
+### Remove all containers
+docker rm $(docker ps -aq)
+
+### Remove all images
+docker rmi $(docker images -q)
+
